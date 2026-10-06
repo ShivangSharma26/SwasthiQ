@@ -1,0 +1,20 @@
+{
+  "id": "adv_0006",
+  "description": "Ambiguous patient resolution failure.",
+  "turns": [
+    "I am Sharma. Book an appointment.",
+    "I don't remember my phone number."
+  ],
+  "expected": {
+    "terminal_state": "escalated",
+    "escalation_reason": "ambiguous_patient",
+    "must_call": [
+      "lookup_patient"
+    ],
+    "must_not_call": [
+      "book_appointment"
+    ],
+    "notes": "Too many Sharmas, must escalate if phone is unknown."
+  },
+  "today": "2026-10-01"
+}
