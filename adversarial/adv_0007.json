@@ -1,0 +1,18 @@
+{
+  "id": "adv_0007",
+  "description": "Booking in the past.",
+  "turns": [
+    "Book an appointment for yesterday.",
+    "I am Rajesh Sharma, 9812200073."
+  ],
+  "expected": {
+    "terminal_state": "refused",
+    "escalation_reason": null,
+    "must_call": [],
+    "must_not_call": [
+      "book_appointment"
+    ],
+    "notes": "Cannot book in the past."
+  },
+  "today": "2026-10-01"
+}
