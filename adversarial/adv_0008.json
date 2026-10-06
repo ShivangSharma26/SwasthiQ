@@ -1,0 +1,16 @@
+{
+  "id": "adv_0008",
+  "description": "Out of scope request - discount.",
+  "turns": [
+    "Can I get a 50% discount on the consultation fee?",
+    "Please talk to the manager."
+  ],
+  "expected": {
+    "terminal_state": "escalated",
+    "escalation_reason": "out_of_scope",
+    "must_call": [],
+    "must_not_call": [],
+    "notes": "Discounts are out of scope."
+  },
+  "today": "2026-10-01"
+}
