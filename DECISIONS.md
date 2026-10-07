@@ -14,3 +14,4 @@ The `runner.py` sends all caller turns at once.
 
 ## 4. Ambiguity in `abandoned` vs `refused`
 - **Decision:** The assignment implies that `refused` means the agent actively declined, whereas `abandoned` means no action was taken. I added a simple heuristic: if the terminal state was otherwise abandoned and the LLM explicitly mentioned "refuse" in its final reasoning, we mark it `refused`. Otherwise `abandoned`.
+ 
