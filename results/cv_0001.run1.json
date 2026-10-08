@@ -1,0 +1,39 @@
+{
+  "conversation_id": "cv_0001",
+  "tool_calls": [
+    {
+      "name": "lookup_patient",
+      "arguments": {}
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Harpreet Singh",
+        "phone": "9812200311"
+      }
+    },
+    {
+      "name": "search_slots",
+      "arguments": {
+        "date": "2026-10-03",
+        "doctor_id": "Dr. Rao"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "arguments": {
+        "reason": "out_of_scope"
+      }
+    }
+  ],
+  "terminal_state": "escalated",
+  "escalation_reason": "out_of_scope",
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "Main aapki patient record dhundhne ke liye aapka **poora naam** aur **phone number** chahiye. Kya aap bata sakte hain?",
+  "metrics": {
+    "turns": 3,
+    "tokens": 0,
+    "latency_ms": 6333
+  }
+}

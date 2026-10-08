@@ -1,0 +1,36 @@
+{
+  "conversation_id": "cv_0002",
+  "tool_calls": [
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "",
+        "phone": ""
+      }
+    },
+    {
+      "name": "lookup_patient",
+      "arguments": {
+        "name": "Neha Bhatt",
+        "phone": "9812200404"
+      }
+    },
+    {
+      "name": "search_slots",
+      "arguments": {
+        "date": "2026-10-07",
+        "doctor_id": "Dr. Rao"
+      }
+    }
+  ],
+  "terminal_state": "abandoned",
+  "escalation_reason": null,
+  "patient_id": null,
+  "appointment_id": null,
+  "reply": "I found your record, **Neha Bhatt**.\n\nHowever, I am unable to find a doctor with the exact name \"Dr. Rao\" in our system. Could you please provide Dr. Rao's **full name** (e.g., Dr. A. Rao, Dr. R. Rao, etc.)? This will help me locate the correct doctor and check the morning slots for you on **7 October 2026**.",
+  "metrics": {
+    "turns": 3,
+    "tokens": 0,
+    "latency_ms": 65951
+  }
+}
